@@ -1,0 +1,23 @@
+React is a javascript library.
+The library for web and native user interfaces
+
+Emmet - generates some code for us
+html:5 --> for basic html snippet
+What is CDN?
+Content Delivery Network
+these are the website where react is hosted and we are just pulling react from them to use it in our project.
+
+what is cross origin?
+
+react.development.js --> React Core Algorithm written inside js File
+react-dom.development.js --> useful for dom operations which requires to modify dom (Document Object Model)
+
+2 seperate files because react doesn't only work on browsers but it works on mobile phones as well that is why 2 files 
+
+{} objects where we give attributes to our tags known as props which will goes inside h1 tags
+
+ReactElement(Object) => HTML(Browser Understands)
+
+jsx
+
+Ref - https://react.dev/reference/react/createElement
