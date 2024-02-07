@@ -1,0 +1,28 @@
+npm init - to create package.json file
+parcel - give strength to app
+two types of dependency  - Dev and normal
+^2.8.3 --> ^ is a caret
+
+package-lock.json --> it keeps a track of exact version
+package.json --> it is a configuration of npm, it keeps a track of what version of package is installed your app
+node modules --> code fetched from npm , feteched all the code of dependencies 
+trasitive dependencies
+npx parcel index.html -- to host on server localhost 1234 port
+npx --> executing a package
+
+https://parceljs.org/
+
+#parcel
+- Dev Build
+- Local server
+- Hot module replacement
+- File watching algorithm - Written in c++
+- Caching - Faster builds
+- Image optimization
+- Bundling
+- Compressing
+- Consistent Hashing
+- Differential Bundling - support older browsers
+- Error Handling
+- https
+- Tree Shaking - remove unused code 
