@@ -1,0 +1,11 @@
+to run project --> npx parcel index.html
+npm run start or npm start --> after adding start command inside script tag in package.json
+React.createElement ==> object ==> HtmlElement(render)
+jsx - transpiiled before it reaches js engine - parcel - babel 
+
+React Components
+1. Class based component - old - uses js classes
+2. functional Components - new - uses js functions
+
+// React functional component
+- normal js functional which returns jsx element or react elements
