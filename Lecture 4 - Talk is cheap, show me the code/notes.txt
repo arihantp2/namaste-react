@@ -1,0 +1,29 @@
+to run project --> npx parcel index.html
+npm run start or npm start --> after adding start command inside script tag in package.json
+React.createElement ==> object ==> HtmlElement(render)
+jsx - transpiiled before it reaches js engine - parcel - babel 
+
+React Components
+1. Class based component - old - uses js classes
+2. functional Components - new - uses js functions
+
+// React functional component
+- normal js functional which returns jsx element or react elements
+
+inline style style={{}}
+
+first bracket telling there is some piece of js and 2nd is js object
+
+props => properties to pass data to components
+- like passing normal arguments to functions
+
+config driven ui = data is the config
+
+UI Layer + Data Leyer = APP
+
+learn join from js
+optional chaining
+map filter reduce
+
+add key wherever we use .map
+cloudinary ; cdn to store upload images
