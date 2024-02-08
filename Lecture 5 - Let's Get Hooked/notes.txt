@@ -1,1 +1,16 @@
+utils => utilities that will use all across the app
 
+Two Types of export :-
+
+1. default export - one file can have 1 default export
+
+export default componentName;
+
+import componentName from "Path";
+
+2. named export - one file can have multiple named exports 
+   To import named export use {name}
+
+export const componentName;
+
+import {componentName} from "Path";

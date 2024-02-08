@@ -1,22 +1,19 @@
-const Header = () => {
-    return (
-      <div className="header">
-        <div className="logo-container">
-          <img
-            className="logo"
-            src="https://play-lh.googleusercontent.com/QZFR_4xreirxaWya9C_SEzo0ZmIvh3so-PsM1gT3HthVWFGnYKodhn6DjtlvkBfYwQ"
-          />
-        </div>
-        <div className="nav-items">
-          <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Contct Us</li>
-            <li>Cart</li>
-          </ul>
-        </div>
-      </div>
-    );
-  };
+import { LOGO_URL } from "./utils/constants";
 
-  export default Header;
+export const Header = () => {
+  return (
+    <div className="header">
+      <div className="logo-container">
+        <img className="logo" src={LOGO_URL} />
+      </div>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contct Us</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
