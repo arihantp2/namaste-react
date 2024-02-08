@@ -23,3 +23,17 @@ export default MyComponent;
 and import like:
 
 import MyComponent, {MyComponent2} from "./MyComponent";
+
+What are React Hooks?
+In React version 16.8, React introduced a new pattern called Hooks. React Hooks are simple JavaScript functions that we can use to isolate the reusable part from a functional component. Hooks can be stateful and can manage side-effects. Hooks allow you to reuse stateful logic without changing your component hierarchy. This makes it easy to share Hooks among many components or with the community.
+
+React provides a bunch of standard in-built hooks:
+useState: To manage states. Returns a stateful value and an updater function to update it.
+useEffect: To manage side-effects like API calls, subscriptions, timers, mutations, and more.
+useContext: To return the current value for a context.
+useReducer: A useState alternative to help with complex state management.
+useCallback: It returns a memorized version of a callback to help a child component not re-render unnecessarily.
+useMemo: It returns a memoized value that helps in performance optimizations.
+useRef: It returns a ref object with a current property. The ref object is mutable. It is mainly used to access a child component imperatively.
+useLayoutEffect: It fires at the end of all DOM mutations. It's best to use useEffect as much as possible over this one as the useLayoutEffect fires synchronously.
+useDebugValue: Helps to display a label in React DevTools for custom hooks.
