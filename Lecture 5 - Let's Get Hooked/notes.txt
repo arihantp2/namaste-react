@@ -14,3 +14,12 @@ import componentName from "Path";
 export const componentName;
 
 import {componentName} from "Path";
+
+We can use Named export and Default export together. So you should export like:
+
+export const MyComponent2 = () => {}
+const MyComponent = () => {}
+export default MyComponent;
+and import like:
+
+import MyComponent, {MyComponent2} from "./MyComponent";
