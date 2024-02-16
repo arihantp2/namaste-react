@@ -1,13 +1,11 @@
 import RestaurantCard from "./RestaurantCard";
-import resList from "./utils/mockData";
+import Shimmer from "./Shimmer";
 import { useState, useEffect } from "react";
 
 const Body = () => {
   const [ListOfRestaurants, setListOfRestaurants] = useState([]);
 
   useEffect(() => {
-    // console.log("useEffect called");
-
     fetchData();
   }, []);
 
@@ -21,9 +19,13 @@ const Body = () => {
 
     // optional chaining
     setListOfRestaurants(
-      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
+
+  if (ListOfRestaurants && ListOfRestaurants.length === 0) {
+    return <Shimmer/>;
+  }
 
   return (
     <div className="body">

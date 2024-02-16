@@ -28,3 +28,4 @@ after component renders callback function get's called.
 
 if origin mismatch browser blocks api calls - cors policy
 
+shimmer ui -A shimmer UI is a version of the UI that doesn't contain actual content, but instead mimics the layout and shapes of the content that will eventually appear.
