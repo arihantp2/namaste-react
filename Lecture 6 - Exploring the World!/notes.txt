@@ -1,0 +1,30 @@
+Monolith Architecture :-
+
+ ----------------------
+|                     |
+|  API            UI  |
+|                     |
+| AUTH    DB    SMS   |
+|                     |
+----------------------
+
+MicroServices
+
+BS UI AUTH
+DB SMS Email
+
+Seperation of concerns and also called single responsibility principal
+
+api calls approaches
+
+page loads --> api 500ms --> Render
+
+page loads --> Render ==> Api ==> re render (better effect better ux)
+
+useEffect(()=> {},[])
+useeffect first argument is arroe function is a call bck function and 2nd srgument is the dependency array.
+
+after component renders callback function get's called.
+
+if origin mismatch browser blocks api calls - cors policy
+
