@@ -37,12 +37,13 @@
     border: 1px solid black;
     cursor: pointer;
 }
+
 .filter {
     padding: 10px;
 }
 
 .filter-btn {
-    margin: 10px;
+    margin: 0 10px;
     cursor: pointer;
 }
 
@@ -69,4 +70,8 @@
     background-color: blue;
     padding: 0 20px;
     cursor: pointer;
+}
+
+.filter {
+    display: flex;
 }
