@@ -42,6 +42,7 @@ const Body = () => {
               setSearchText(e.target.value);
             }}
           ></input>
+
           <button
             onClick={() => {
               const filteredtRestaurants = ListOfRestaurants.filter((res) => {
@@ -55,6 +56,7 @@ const Body = () => {
             Search
           </button>
         </div>
+
         <button
           className="filter-btn"
           onClick={() => {
@@ -68,6 +70,7 @@ const Body = () => {
           Top Rated Restaurants
         </button>
       </div>
+
       <div className="res-container">
         {filteredtRestaurants.map((restaurant) => (
           <RestaurantCard
