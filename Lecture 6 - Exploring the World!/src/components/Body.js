@@ -23,11 +23,6 @@ const Body = () => {
     );
   };
 
-  // // Conditional Rendering
-  // if (ListOfRestaurants && ListOfRestaurants.length === 0) {
-  //   return <Shimmer />;
-  // }
-
   return ListOfRestaurants && ListOfRestaurants.length === 0 ? (
     <Shimmer />
   ) : (

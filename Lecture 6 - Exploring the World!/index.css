@@ -63,3 +63,10 @@
     background-color: #f0f0f0;
     margin: 20px;
 }
+
+.login {
+    color: white;
+    background-color: blue;
+    padding: 0 20px;
+    cursor: pointer;
+}
