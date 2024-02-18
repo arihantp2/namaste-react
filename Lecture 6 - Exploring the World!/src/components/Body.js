@@ -19,15 +19,18 @@ const Body = () => {
 
     // optional chaining
     setListOfRestaurants(
-      json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
 
-  if (ListOfRestaurants && ListOfRestaurants.length === 0) {
-    return <Shimmer/>;
-  }
+  // // Conditional Rendering
+  // if (ListOfRestaurants && ListOfRestaurants.length === 0) {
+  //   return <Shimmer />;
+  // }
 
-  return (
+  return ListOfRestaurants && ListOfRestaurants.length === 0 ? (
+    <Shimmer />
+  ) : (
     <div className="body">
       <div className="filter">
         <button
