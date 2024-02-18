@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 const Body = () => {
   const [ListOfRestaurants, setListOfRestaurants] = useState([]);
+  const [filteredtRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
@@ -20,6 +21,9 @@ const Body = () => {
 
     // optional chaining
     setListOfRestaurants(
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
+    setFilteredRestaurants(
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
@@ -41,10 +45,11 @@ const Body = () => {
           <button
             onClick={() => {
               const filteredtRestaurants = ListOfRestaurants.filter((res) => {
-                return res.info.name.includes(searchText);
+                return res.info.name
+                  .toLowerCase()
+                  .includes(searchText.toLowerCase());
               });
-              setListOfRestaurants(filteredtRestaurants);
-              console.log(searchText);
+              setFilteredRestaurants(filteredtRestaurants);
             }}
           >
             Search
@@ -54,17 +59,17 @@ const Body = () => {
           className="filter-btn"
           onClick={() => {
             const filteredList = ListOfRestaurants.filter(
-              (res) => res.data.avgRating > 4
+              (res) => res.info.avgRating > 4.5
             );
 
-            setListOfRestaurants(filteredList);
+            setFilteredRestaurants(filteredList);
           }}
         >
           Top Rated Restaurants
         </button>
       </div>
       <div className="res-container">
-        {ListOfRestaurants.map((restaurant) => (
+        {filteredtRestaurants.map((restaurant) => (
           <RestaurantCard
             key={restaurant?.info?.id}
             resData={restaurant?.info}
