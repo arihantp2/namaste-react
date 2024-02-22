@@ -1,0 +1,6 @@
+if no dependency array in useEffect => useEffect is called on every render
+if dependency array is empty = [] => useEffect is called on initial render (just once)
+if we have something in dependency like [btnState] => useEffect is called on dependency changes/updated.
+
+UseState hook need to call inside component.
+for best practices,write it on top side of the component
