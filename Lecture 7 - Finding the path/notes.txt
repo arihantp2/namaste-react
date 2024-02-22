@@ -4,3 +4,17 @@ if we have something in dependency like [btnState] => useEffect is called on dep
 
 UseState hook need to call inside component.
 for best practices,write it on top side of the component
+never create State varibles inside if else, loops and inside functions
+javascript is a synchronous single threaded language so code will execute line by line.
+
+Routing --
+npm i react-router-dom
+
+createBrowserRouter takes configuration of routing which is list of objcts contains path and element
+
+configuration - when we pass something to route and then what will happen to that time
+                information that tell the browser router what will happen on a specific path.
+
+RouterProvider - It will provide the routing configurations to the app
+
+rafce --> shortcut to create functional component with arrow function with default export
