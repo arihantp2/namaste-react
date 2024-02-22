@@ -18,3 +18,8 @@ configuration - when we pass something to route and then what will happen to tha
 RouterProvider - It will provide the routing configurations to the app
 
 rafce --> shortcut to create functional component with arrow function with default export
+
+2 types of routing in web apps
+
+1. Client Side routing
+2. server side routing
