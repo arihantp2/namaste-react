@@ -14,9 +14,15 @@ export const Header = () => {
       </div>
       <div className="nav-items">
         <ul>
-          <Link to='/'>Home</Link>
-          <Link to="/about">About Us</Link>
-          <Link to='/contact'>Contact Us</Link>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About Us</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact Us</Link>
+          </li>
           <li>Cart</li>
           <button
             className="login"
