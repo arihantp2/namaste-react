@@ -11,14 +11,6 @@ const AppLayout = () => {
   return (
     <div className="app">
       <Header />
-
-      {/* if path = / */}
-      {/* <Body /> */}
-      {/* if path = /about */}
-      {/* <About /> */}
-      {/* if path = /contact */}
-      {/* <Contact /> */}
-
       <Outlet />
     </div>
   );
