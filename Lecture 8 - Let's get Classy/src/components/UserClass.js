@@ -8,9 +8,16 @@ class UserClass extends Component {
     this.state = {
       count: 0,
     };
+
+    console.log("CHILD CONSTRUCTOR");
+  }
+
+  componentDidMount() {
+    console.log("CHILD COMPONENT DID MOUNT");
   }
 
   render() {
+    console.log("CHILD RENDER");
     const { name, location } = this.props;
     const { count } = this.state;
     return (
