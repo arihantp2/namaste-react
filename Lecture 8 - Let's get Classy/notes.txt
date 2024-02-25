@@ -1,1 +1,29 @@
 Constructor and super(props)
+
+life cycles
+
+loading-mounting
+
+component did mount - to make api calls
+
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+
+lifecycle methods
+
+Mounting -  showing on the ui
+
+Constructor (dummy)
+Render (dummy)
+    <html Dummy >
+component did mount
+    <API Calls>
+    <This.setState> -> State variable is updated
+
+Update
+
+Render (API Data)
+<HTML (new API Data)>
+component did update
+
+unmounting - disapperaing or disabling from the ui

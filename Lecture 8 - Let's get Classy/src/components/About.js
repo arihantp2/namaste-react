@@ -6,13 +6,13 @@ class About extends Component {
   constructor(props) {
     super(props);
 
-    console.log("PARENT CONSTRUCTOR")
+    // console.log("PARENT CONSTRUCTOR")
   }
   componentDidMount() {
-    console.log("PARENT COMPONENT DID MOUNT");
+    // console.log("PARENT COMPONENT DID MOUNT");
   }
   render() {
-    console.log("PARENT RENDER")
+    // console.log("PARENT RENDER")
     return (
       <div>
         {/* <User name={"Arihant (Function)"} /> */}

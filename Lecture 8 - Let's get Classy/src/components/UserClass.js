@@ -6,27 +6,45 @@ class UserClass extends Component {
     // console.log(props);
 
     this.state = {
-      count: 0,
+      //   count: 0,
+      userInfo: {
+        name: "testUser",
+        location: "default",
+      },
     };
 
-    console.log("CHILD CONSTRUCTOR");
+    // console.log("CHILD CONSTRUCTOR");
   }
 
-  componentDidMount() {
-    console.log("CHILD COMPONENT DID MOUNT");
+  async componentDidMount() {
+    // console.log("CHILD COMPONENT DID MOUNT");
+    const data = await fetch("https://api.github.com/users/arihantp2");
+    const json = await data.json();
+
+    this.setState({
+      userInfo: json,
+    });
+    console.log("user >", json);
+  }
+
+  componentWillUnmount() {
+    console.log("component unmount called.");
   }
 
   render() {
-    console.log("CHILD RENDER");
-    const { name, location } = this.props;
-    const { count } = this.state;
+    // console.log("CHILD RENDER");
+    // const { name, location } = this.props;
+    // const { count } = this.state;
+
+    const { name, location, login, avatar_url } = this.state.userInfo;
     return (
       <div className="user-card">
+        <img src={avatar_url}></img>
         <h2>Name : {name}</h2>
         <h3>Location : {location}</h3>
-        <h4>Contact : arihantphad2@gmail.com</h4>
-        <p>count : {count}</p>
-        <button
+        <h4>contact : {login}</h4>
+        {/* <p>count : {count}</p> */}
+        {/* <button
           onClick={() => {
             //Never update state variables directly
             this.setState({
@@ -35,7 +53,7 @@ class UserClass extends Component {
           }}
         >
           Count +
-        </button>
+        </button> */}
       </div>
     );
   }
