@@ -1,0 +1,11 @@
+Single responsibility principle
+- Every component should have their unique responsibility
+
+modularity
+- slicing code into multiple modules
+
+- code becomes Reusable , maintainable and testable
+
+custom hooks - hooks which we create
+we have created useRestaurantMenu hook to fetch the records by passing resId 
+so our component will just display the data it doesn't need to worry about fetching data.
