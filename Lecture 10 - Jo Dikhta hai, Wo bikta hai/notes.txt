@@ -1,0 +1,16 @@
+Ways of writing styling for react apps -
+1. Normal Css
+2. Sass / Scss
+3. styled components
+4. Bootstrap classes
+5. Tailwind Css
+6. Material Ui
+7. Chakra Ui
+8. Ant Design
+
+Tailwind css - https://tailwindcss.com/docs/guides/parcel
+
+npm install -D tailwindcss postcss
+npx tailwindcss init
+
+npx - invoking package
