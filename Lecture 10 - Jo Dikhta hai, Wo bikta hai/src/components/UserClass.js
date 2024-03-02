@@ -32,10 +32,6 @@ class UserClass extends Component {
   }
 
   render() {
-    // console.log("CHILD RENDER");
-    // const { name, location } = this.props;
-    // const { count } = this.state;
-
     const { name, location, login, avatar_url } = this.state.userInfo;
     return (
       <div className="user-card m-4 p-4 w-[200px] h-[250px] bg-gray-50 rounded-lg">
@@ -43,17 +39,6 @@ class UserClass extends Component {
         <h2>Name : {name}</h2>
         <h3>Location : {location}</h3>
         <h4>contact : {login}</h4>
-        {/* <p>count : {count}</p> */}
-        {/* <button
-          onClick={() => {
-            //Never update state variables directly
-            this.setState({
-              count: this.state.count + 1,
-            });
-          }}
-        >
-          Count +
-        </button> */}
       </div>
     );
   }
