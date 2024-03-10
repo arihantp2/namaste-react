@@ -1,0 +1,6 @@
+Higher order component 
+    - function which takes a component and returns a component
+
+controlled and uncontrolled components
+lifting the state up
+props drilling
