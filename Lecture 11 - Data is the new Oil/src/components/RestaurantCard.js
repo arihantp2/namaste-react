@@ -7,7 +7,7 @@ const RestaurantCard = (props) => {
     resData;
 
   return (
-    <div className="m-4 p-4 w-[250px] rounded-lg bg-gray-100">
+    <div className="m-4 p-4 w-[250px] h-[400px] rounded-lg bg-gray-100">
       <img alt="res-logo" src={CDN_URL + cloudinaryImageId} />
 
       <h3 className="font-bold py-2 text-lg">{name}</h3>
