@@ -1,0 +1,5 @@
+Redux
+
+https://redux.js.org/
+
+A Predictable State Container for JS Apps
