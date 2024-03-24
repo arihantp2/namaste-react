@@ -3,3 +3,16 @@ Redux
 https://redux.js.org/
 
 A Predictable State Container for JS Apps
+
+Button clicks --> dispatch (action) --> reducer--> store and update slice
+
+selector (subscribing to store) --> to get data from store
+
+Steps :-
+
+- Install @reduxjs/toolkit and react-redux
+- Build our store
+- Connect our store to our food app
+- Slice (CartSlice)
+- dispatch(action)
+- selector
