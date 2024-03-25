@@ -12,7 +12,7 @@ const Body = () => {
   const [filteredtRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
 
-  const {loggedInUser, setUserName } = useContext(UserContext);
+  const { loggedInUser, setUserName } = useContext(UserContext);
 
   const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
 
@@ -49,6 +49,7 @@ const Body = () => {
       <div className="filter flex">
         <div className="search m-4 p-4">
           <input
+            data-testid="searchInput"
             type="text"
             className="border border-solid border-black px-4"
             value={searchText}
