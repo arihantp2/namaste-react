@@ -1,0 +1,18 @@
+types of testing (devloper)
+1. Unit Testing
+    - we test react copmponents in isolation
+2. Integration Testing
+3. End to End Testing - E2E testing
+    - Testing different type of flows (simulating user's experience)
+
+Setting up testing in our app
+- Install react testing library
+- Install jest
+- install babel dependency
+- configure babel
+- configure Parcel config file to disable default babel transapilation
+- jest configuration --> npx jest --Integration
+- install jsdom library
+- install @babel/preset-react - to make jsx work in test cases
+- Include @babel/preset-react inside my babel config
+- npm i -D @testing-library/jest-dom
