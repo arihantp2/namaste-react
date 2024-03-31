@@ -1,6 +1,9 @@
 Higher order component 
     - function which takes a component and returns a component
 
-controlled and uncontrolled components
-lifting the state up
-props drilling
+### Topics Covered:
+
+- Seperation of a React Application into UI-Layer and Data-Layer
+- Controlled and Uncontrolled Components
+- Prop Driling
+- Context API in React

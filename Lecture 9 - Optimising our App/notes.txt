@@ -11,3 +11,11 @@ we have created useRestaurantMenu hook to fetch the records by passing resId
 so our component will just display the data it doesn't need to worry about fetching data.
 
 Chunking = Code Splitting = Dynamic bundling = Lazy loading --> on demand loading
+
+### Topics Taught
+
+- Custom Hooks
+- Modularity in Code
+- Modular Bundling
+- Code Splitting
+- Lazy Loading
